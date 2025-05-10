@@ -1,16 +1,14 @@
-
-const themeSelector = document.querySelector('#theme');
-const body = document.body;
-const logo = document.querySelector('footer img');
+const themeSelector = document.getElementById("theme");
+const logo = document.querySelector("footer img");
 
 function changeTheme() {
-  if (themeSelector.value === 'dark') {
-    body.classList.add('dark');
-    logo.src = 'byui-logo_white.png';
-  } else {
-    body.classList.remove('dark');
-    logo.src = 'byui-logo_blue.webp';
-  }
+  const isDark = themeSelector.value === "dark";
+  document.body.classList.toggle("dark", isDark);
+  logo.src = isDark ? "byui-logo_white.png" : "byui-logo_blue.webp";
 }
 
-themeSelector.addEventListener('change', changeTheme);
+themeSelector.addEventListener("change", changeTheme);
+
+window.addEventListener("DOMContentLoaded", () => {
+  changeTheme();
+});
