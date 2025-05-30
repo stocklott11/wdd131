@@ -104,7 +104,7 @@ body {
   
   .book-content p {
     margin: 0 auto;
-    max-width: 300px;
+    /* max-width: 300px; */
   }
   
   /* Sidebar */
@@ -121,5 +121,9 @@ body {
   
   .filters label {
     font-weight: bold;
+  }
+  
+  .reviews article {
+    margin-bottom: 3rem;
   }
   
