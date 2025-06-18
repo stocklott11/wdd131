@@ -67,6 +67,12 @@ header h1 {
   padding: 0.5rem;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-form button:hover {
+  background-color: #147bbf;
+  transform: scale(1.05);
 }
 
 .search-form button img {
@@ -95,6 +101,12 @@ header h1 {
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
   font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.recipe-details .tag:hover {
+  background-color: #3aa7a7;
+  transform: scale(1.1);
 }
 
 .recipe-details h2 {
@@ -129,6 +141,11 @@ footer {
 
 .social img {
   height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.social img:hover {
+  transform: scale(1.2);
 }
 
 /* Responsive Layouts */
