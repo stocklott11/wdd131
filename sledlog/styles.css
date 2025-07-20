@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 1em 0;
+  margin-bottom: 0px;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 4em;
+  margin-right: 0.5em;
+}
+
+.nav-title-text {
+  font-size: 2em;
+  font-weight: bold;
+  color: #004b73;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #004b73;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  font-size: x-large;
+}
+
+.nav-links a:hover {
+  color: #ffa500;
+}
+
+/* ---------- HOME PAGE ---------- */
+
+.centered-hero {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 4em 1em;
+  border-radius: 12px;
+  margin-bottom: 3em;
+}
+
+.hero-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #004b73;
+  margin-bottom: 1em;
+}
+
+.hero-image img {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 2em auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hero-points {
+  list-style: none;
+  font-size: 1.25rem;
+  padding: 0;
+  margin-bottom: 1.5em;
+}
+
+.hero-points li {
+  margin: 0.75em 0;
+}
+
+.cta-button {
+  background-color: #ffa500;
+  color: #004b73;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e69500;
+}
+
+.how-it-works {
+  margin: 4em 0;
+  text-align: center;
+}
+
+.how-it-works h3 {
+  font-size: 2rem;
+  color: #004b73;
+  margin-bottom: 1em;
+}
+
+.how-it-works ol {
+  font-size: 1.25rem;
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.testimonial {
+  background-color: #f4f4f4;
+  padding: 3em 2em;
+  margin: 4em 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+  color: #444;
+}
+
+.testimonial p {
+  font-weight: bold;
+  color: #004b73;
+}
+
+.recent-logs {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+.recent-logs h3 {
+  font-size: 1.8rem;
+  color: #004b73;
+  margin-bottom: 1em;
+}
+
+.recent-logs ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.recent-logs li {
+  margin: 0.5em 0;
+}
+
+.recent-logs img {
+  height: 1.5em;
+}
+
+/* ---------- FOOTER ---------- */
+
+.site-footer {
+  background-color: #0c3b5e;
+  color: white;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: large;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #ffa500;
+}
+
+
+
+/* ---------- MAINTENANCE PAGE ---------- */
+
+.maintenance-layout {
+  display: flex;
+  gap: 2em;
+}
+
+.sidebar {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.sidebar label {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95em;
+}
+
+.sidebar select,
+.sidebar input,
+.sidebar textarea {
+  padding: 0.5em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 0.25em;
+}
+
+.sidebar button {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 0.6em;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #e69500;
+}
+
+.add-sled-form {
+  background-color: #f8f8f8;
+  padding: 1em;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.add-sled-form input {
+  padding: 0.5em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.add-sled-form button {
+  margin-top: auto;
+  align-self: center;
+  width: 80%;
+}
+
+.maintenance-content {
+  flex: 1;
+}
+
+.log-filters {
+  margin-bottom: 1em;
+}
+
+.log-filters h2 {
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+  color: #222;
+}
+
+.log-filters select {
+  padding: 0.5em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 0.95em;
+}
+
+#entry-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#entry-list li {
+  background: #f9f9f9;
+  border-left: 4px solid #ffa500;
+  padding: 0.75em 1em;
+  margin-bottom: 0.75em;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  font-size: 0.95em;
+}
+
+#entry-list li img {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.75em;
+}
+
+#entry-list .delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 0.25em 0.5em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#entry-list .delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .maintenance-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sled Log - Maintenance</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-inner container">
+        <div class="nav-left">
+          <img src="images/reallogo.webp" alt="SledLog Logo" class="logo" />
+          <span class="nav-title-text">SledLog</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="maintenance.html">Maintenance Log</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="maintenance-layout container">
+    <aside class="sidebar">
+      <label>Filter by Service:
+        <select id="filter-service">
+          <option>All</option>
+          <option>Oil Change</option>
+          <option>Track Inspection</option>
+          <option>Clutch</option>
+          <option>Pre-Season</option>
+          <option>Repairs</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <label>Select Sled:
+        <select id="filter-sled">
+          <option>Polaris 850</option>
+          <option>Ski-Doo Summit</option>
+        </select>
+      </label>
+      <label>Date:
+        <input type="date" id="log-date" />
+      </label>
+      <label>Notes:
+        <textarea id="log-notes" placeholder="Add notes..." rows="3"></textarea>
+      </label>
+      <button id="add-entry">Add Entry</button>
+
+      <div class="add-sled-form">
+        <h3>Add New Sled</h3>
+        <label for="new-sled-name" style="margin-bottom: 0.5em; font-weight: normal;">Enter sled name:</label>
+        <input type="text" id="new-sled-name" placeholder="e.g. Arctic Cat Alpha" style="margin-bottom: 0.75em;" />
+        <button id="add-sled">Add Sled</button>
+      </div>
+    </aside>
+    <section class="maintenance-content">
+      <div class="log-filters">
+        <h2>Maintenance History</h2>
+        <div style="display: flex; gap: 1em; margin-bottom: 1em; flex-wrap: wrap;">
+          <select id="filter-date">
+            <option value="all">All Dates</option>
+          </select>
+          <select id="filter-service-history">
+            <option value="all">All Services</option>
+            <option value="Oil Change">Oil Change</option>
+            <option value="Track Inspection">Track Inspection</option>
+            <option value="Clutch">Clutch</option>
+            <option value="Pre-Season">Pre-Season</option>
+            <option value="Repairs">Repairs</option>
+            <option value="Other">Other</option>
+          </select>
+          <select id="filter-sled-history">
+            <option value="all">All Sleds</option>
+            <option value="Polaris 850">Polaris 850</option>
+            <option value="Ski-Doo Summit">Ski-Doo Summit</option>
+          </select>
+        </div>
+        <ul id="entry-list">
+          <li>07/10/25 - Polaris 850 - Oil Change - Notes: Switched to synthetic</li>
+          <li>07/01/25 - Ski-Doo Summit - Track Check - Notes: Found slight wear</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <script src="maintenance.js"></script>
+</body>
+</html>
